@@ -8,19 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/dhruvalkodinariya/autocomplete-select.git"
+    "url": "git+https://github.com/dhruvalkodinariya/autocomplete-select.git"
   },
   "keywords": [
     "auto-complete",
     "select",
     "material-design"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Dhruval Kodinariya",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/dhruvalkodinariya/autocomplete-select/issues"
+    "url": "https://github.com/dhruvalkodinariya/autocomplete-select/issues"
   },
-  "homepage": "https://gitlab.com/dhruvalkodinariya/autocomplete-select#readme",
+  "homepage": "https://github.com/dhruvalkodinariya/autocomplete-select#readme",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.2.4",
     "@material/mwc-textfield": "^0.14.1",
