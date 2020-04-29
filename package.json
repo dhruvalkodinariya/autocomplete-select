@@ -1,5 +1,5 @@
 {
-  "name": "autocomplete-select",
+  "name": "@dhruval/autocomplete-select",
   "version": "1.0.0",
   "description": "It gives suggestions when typing in input field.",
   "main": "index.js",
