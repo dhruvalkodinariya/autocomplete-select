@@ -318,7 +318,7 @@ export class AutocompleteSelect extends LitElement {
     setTimeout(()=>{
       this.open();
       this._positionTarget.addEventListener('keydown',this._onKeyDown);
-    },100)
+    })
   }
 
   _onInputBlur(){

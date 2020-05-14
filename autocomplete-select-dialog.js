@@ -40,8 +40,8 @@ export class AutocompleteSelectDialog extends AutocompleteSelectDialogBase {
           animation-name: fadeIn;
           -moz-animation-name: fadeIn;
           -o-animation-name: fadeIn;
-          -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
+          -webkit-animation-duration: 100ms;
+          animation-duration: 100ms;
           animation-timing-function: ease-in-out;
           -webkit-animation-timing-function: ease-in-out;
           -moz-animation-timing-function: ease-in-out;
@@ -92,7 +92,7 @@ export class AutocompleteSelectDialog extends AutocompleteSelectDialogBase {
         }
 
         .main-content .items-container  .item.kb-highlighted {
-          background: var(--dw-select-kb-highlighted-bg-color, rgba(0,0,0,0.12));
+          background: var(--dw-select-kb-highlighted-bg-color, var(--mdc-theme-divider));
         }
 
         .main-content .items-container autocomplete-select-list-item.hidden {

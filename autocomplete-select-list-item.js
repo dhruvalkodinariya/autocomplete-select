@@ -48,7 +48,7 @@ export class AutocompleteSelectListItem extends LitElement {
         }
 
         :host(:hover) {
-          background: var(--dw-select-item-hover-color, rgba(0,0,0,0.06));
+          background: var(--dw-select-item-hover-color, var(--mdc-theme-divider));
         }
 
         :host([disabled]) {
@@ -63,20 +63,29 @@ export class AutocompleteSelectListItem extends LitElement {
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
-          color: var(--dw-select-item-content-color,var(--mdc-theme-text-primary));
+          color: var(--dw-select-item-content-color,var(--mdc-theme-text-secondary));
           text-transform: var(--dw-select-item-content-text-transform, initial);
           padding: var(--dw-select-item-content-padding, 0px);
           margin: var(--dw-select-item-content-margin, 0px);
         }
+        
+        :host([selected]) .content {
+          color: var(--dw-select-item-content-selected-color,var(--mdc-theme-text-primary));
+          font-weight:600;
+        }
 
-        .icon {
+        :host([selected]) .icon mwc-icon{
+          color: var(--dw-select-item-icon-selected-color,var(--mdc-theme-text-primary));
+        }
+
+        .icon{
           -ms-flex: none;
           -webkit-flex: none;
           flex: none;
           height: var(--dw-select-item-icon-height, 24px);
           width: var(--dw-select-item-icon-width, 24px);
           margin: var(--dw-select-item-icon-margin, 0px 8px 0px 0px);
-          color: var(--dw-select-item-icon-color);
+          color: var(---mdc-theme-text-secondary);
         }
 
         :host([disabled]) .icon{
