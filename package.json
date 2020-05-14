@@ -1,6 +1,6 @@
 {
   "name": "@dhruval/autocomplete-select",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It gives suggestions when typing in input field.",
   "main": "index.js",
   "scripts": {
